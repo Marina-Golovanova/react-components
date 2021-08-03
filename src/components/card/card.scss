@@ -1,0 +1,63 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 4px 4px 8px -2px rgba(34, 60, 80, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s;
+  position: relative;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+
+  &__price-container {
+    background-color: #f3f0f0;
+    padding: 5px 10px;
+    min-height: 51px;
+  }
+
+  &__price {
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #474747;
+    margin-bottom: 5px;
+  }
+
+  &__good-price {
+    font-size: 0.8rem;
+    color: #5e5e5e;
+  }
+
+  &__information {
+    padding: 10px;
+  }
+
+  &__item {
+    font-size: 0.9rem;
+    max-width: 210px;
+  }
+
+  &__date {
+    font-size: 0.8rem;
+    color: #5e5e5e;
+    margin-top: 10px;
+  }
+
+  &__img {
+    height: 180px;
+    object-fit: cover;
+  }
+
+  &__letter {
+    width: 1.5rem;
+    position: absolute;
+    top: 85%;
+    left: 85%;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
